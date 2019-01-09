@@ -1,0 +1,26 @@
+Then the input string is checked for 
+isroot word
+isnoun
+isverb.
+the checkroot function goes to Adictionery.java and checks for the root word.
+if a root word is found in
+Noun,Verb, Adjective,Adverb,Particle,Neg_Finite,Conjuntion,Interjection,Interrogative,Interrogative_Adj,Demo_Adj,Finite_Verb,Postposition,Intensifier,Non_Tamil,End_Noun,ProNoun,Entity
+If the root word found in these files of the dictionery ,the MA will directly assign the tag.
+ 
+ The nound and verb root words are implemented as
+ NOUN:
+the tamil word is சகிதம் and 
+the output is 
+சகலம்##சகலம் ##Noun
+
+the manipravalam word is சகஸ்ரநாமம் and 
+the output is 
+சகஸ்ரநாமம்##சகஸ்ரநாமம் ##Noun
+VERB
+the tamil word is சித்தப்படுத்து and
+the output is
+சித்தப்படுத்து##சித்தப்படுத்து <br/>##Verb
+
+Likewise the other tags are assigned directly if the input string is found in the dictionery.
+
+

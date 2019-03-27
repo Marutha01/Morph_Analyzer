@@ -240,13 +240,13 @@ public class AuxiliaryVerb
 
 			//kizi
 
-			if (ByteMeth.endsWith(topElmt, Constant.kizi))
+			if (ByteMeth.endsWith(topElmt, Constant.venum))
 			{
-				//clia.unl.unicode.utils.Utils.printOut(Analyser.print, x + "kizi");
+				//clia.unl.unicode.utils.Utils.printOut(Analyser.print, x + "venum");
 				s.pop();
-				s.push(new Entry(Constant.kizi, Tag.AuxiliaryVerb));
+				s.push(new Entry(Constant.venum, Tag.AuxiliaryVerb));
 				topElmt = ByteMeth.subArray(topElmt, 0,
-				  topElmt.length - Constant.kizi.length);
+				  topElmt.length - Constant.venum.length);
 				s.push(new Entry(topElmt, -1, oldTopElmt));
 				Sandhi.k(s);
 				return true;
